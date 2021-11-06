@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<h2>Add your emergency contacts here!</h2>
+
+
+
+<form class="" action="/addcontacts" method="post">
+  <div class="form-group">
+    <label>Name of Contact</label>
+    <input class="form-control" type="text" name="postName" >
+    <label>Email</label>
+    <input class="form-control" type="text" name="postEmail" >
+    <label>Relation</label>
+    <textarea class="form-control" name="postRelation" rows="4" cols="40"></textarea>
+
+  </div>
+<button class="btn btn-primary"type="submit" name="button">ADD</button>
+</form>
+
+  <%- include('partials/footer'); -%>

@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+<h2>Emergency Conatcts!</h2>
+<% console.log(posts); %>
+
+<%posts.forEach(function(pi){%>
+  <h2><%=pi.name%></h2>
+  <p>
+
+    <%=pi.email%>
+    </p>
+    <p>
+    
+      <%=pi.relation%>
+      </p>
+<%})%>
+  <%- include('partials/footer'); -%>
